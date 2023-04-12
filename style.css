@@ -1,0 +1,4 @@
+/* Remove exclamation icon from invalid forms to prevent appearance underneath help text. */
+.form-table .form-required.form-invalid td:after {
+    content: none;
+}
