@@ -4,6 +4,19 @@
   "description": "A plugin that shows the admin styles for WordPress.",
   "author": "Aaron Tweeton",
   "license": "GPL-2.0-or-later",
+  "keywords": [
+    "WordPress",
+    "plugin"
+  ],
+  "homepage": "https://github.com/AaronTweeton/admin-style-book",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AaronTweeton/admin-style-book"
+  },
+  "bugs": {
+    "url": "https://github.com/AaronTweeton/admin-style-book/issues",
+    "email": "aaron@aarontweeton.com"
+  },
   "main": "build/index.js",
   "dependencies": {
     "@wordpress/components": "^23.7.0",
