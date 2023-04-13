@@ -58,6 +58,11 @@ if (!class_exists('AdminStyleBook_Plugin')) {
 
             wp_enqueue_style('wp-components');
 
+            wp_enqueue_style(
+                'admin-style-book',
+                plugins_url('style.css', __FILE__),
+            );
+
             $filename = plugin_dir_path(__FILE__) . 'build/index.asset.php';
 
             if (file_exists($filename)) {
@@ -69,11 +74,6 @@ if (!class_exists('AdminStyleBook_Plugin')) {
                     $asset_file['dependencies'],
                     $asset_file['version'],
                     true
-                );
-
-                wp_enqueue_style(
-                    'admin-style-book',
-                    plugins_url('style.css', __FILE__),
                 );
             }
         }
