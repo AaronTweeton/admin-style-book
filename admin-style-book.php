@@ -58,6 +58,11 @@ if (!class_exists('AdminStyleBook_Plugin')) {
 
             wp_enqueue_style('wp-components');
 
+            wp_enqueue_style(
+                'admin-style-book',
+                plugins_url('style.css', __FILE__),
+            );
+
             $filename = plugin_dir_path(__FILE__) . 'build/index.asset.php';
 
             if (file_exists($filename)) {
@@ -70,11 +75,11 @@ if (!class_exists('AdminStyleBook_Plugin')) {
                     $asset_file['version'],
                     true
                 );
-
-                wp_enqueue_style(
-                    'admin-style-book',
-                    plugins_url('style.css', __FILE__),
-                );
+            } else {
+                $handle = 'admin-style-book-js-error';
+                wp_register_script($handle, '',);
+                wp_enqueue_script($handle);
+                wp_add_inline_script($handle, "console.error('" . __("A required JavaScript file could not be loaded, which will prevent some content from loading.", 'admin-style-book') . "');");
             }
         }
 
