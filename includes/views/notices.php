@@ -1,4 +1,4 @@
-<h2>Notices</h2>
+<h2><?php _e('Notices', 'admin-style-book') ?></h2>
 <div class="notice notice-error inline">
     <p>This is an error notice.</p>
 </div>

@@ -35,7 +35,7 @@ if (!function_exists('is_current')) {
 ?>
 
 <div class="wrap">
-    <h1>Admin Style Book</h1>
+    <h1><?php _e('Admin Style Book', 'admin-style-book') ?></h1>
     <ul class="subsubsub">
         <?php
         foreach ($routes as $route) {
