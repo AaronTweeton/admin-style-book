@@ -1,4 +1,4 @@
-<h2>Text</h2>
+<h2><?php _e('Text', 'admin-style-book') ?></h2>
 <section>
     <header>
         <h3>Headings</h3>
