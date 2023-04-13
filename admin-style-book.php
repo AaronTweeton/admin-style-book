@@ -36,12 +36,8 @@ if (!class_exists('AdminStyleBook_Plugin')) {
             register_activation_hook(__FILE__, array($this, 'handle_activation'));
             register_deactivation_hook(__FILE__,  array($this, 'handle_deactivation'));
 
-            add_action('init', array($this, 'create_post_type'));
             add_action('admin_menu', array($this, 'create_submenu_page'));
             add_action('admin_enqueue_scripts', array($this, 'enqueue_assets'));
-        }
-
-        public function create_post_type(): void {
         }
 
         public function create_submenu_page(): void {
@@ -83,7 +79,6 @@ if (!class_exists('AdminStyleBook_Plugin')) {
         }
 
         public function handle_activation(): void {
-            $this->create_post_type();
             flush_rewrite_rules();
         }
 
