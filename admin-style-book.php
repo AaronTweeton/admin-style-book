@@ -75,6 +75,11 @@ if (!class_exists('AdminStyleBook_Plugin')) {
                     $asset_file['version'],
                     true
                 );
+            } else {
+                $handle = 'admin-style-book-js-error';
+                wp_register_script($handle, '',);
+                wp_enqueue_script($handle);
+                wp_add_inline_script($handle, "console.error('" . __("A required JavaScript file could not be loaded, which will prevent some content from loading.", 'admin-style-book') . "');");
             }
         }
 
