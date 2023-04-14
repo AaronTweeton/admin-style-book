@@ -4,6 +4,7 @@ $page = (string)$query_string['page'];
 $path = (string)isset($query_string['path']) ? $query_string['path'] : 'text';
 $routes = array(
     'text',
+    'colors',
     'design',
     'notices',
     'forms',
@@ -35,7 +36,7 @@ if (!function_exists('is_current')) {
 ?>
 
 <div class="wrap">
-    <h1><?php _e('Admin Style Book', 'admin-style-book') ?></h1>
+    <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
     <ul class="subsubsub">
         <?php
         foreach ($routes as $route) {
@@ -59,6 +60,7 @@ if (!function_exists('is_current')) {
     <?php
     switch ($path) {
         case 'text':
+        case 'colors':
         case 'design':
         case 'notices':
         case 'forms':
