@@ -4,6 +4,7 @@ $page = (string)$query_string['page'];
 $path = (string)isset($query_string['path']) ? $query_string['path'] : 'text';
 $routes = array(
     'text',
+    'colors',
     'design',
     'notices',
     'forms',
@@ -59,6 +60,7 @@ if (!function_exists('is_current')) {
     <?php
     switch ($path) {
         case 'text':
+        case 'colors':
         case 'design':
         case 'notices':
         case 'forms':

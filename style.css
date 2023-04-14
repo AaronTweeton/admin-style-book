@@ -1,4 +1,38 @@
+:root {
+  --wp--custom--spacer-1: 0.25rem;
+  --wp--custom--spacer-2: 0.5rem;
+  --wp--custom--spacer-3: 1rem;
+  --wp--custom--spacer-4: 1.5rem;
+  --wp--custom--spacer-5: 3rem;
+}
+
 /* Remove exclamation icon from invalid forms to prevent appearance underneath help text. */
 .form-table .form-required.form-invalid td:after {
-    content: none;
+  content: none;
+}
+
+.color-group {
+  margin-bottom: var(--wp--custom--spacer-4);
+}
+
+.colors {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--wp--custom--spacer-2);
+}
+
+.color {
+  border-radius: 0.25rem;
+  padding: var(--wp--custom--spacer-3);
+}
+
+.color:not(.accent-yellow):not(.accent-green):not(.silver-gray):not(
+    .light-silver-gray
+  ) {
+  color: white;
+}
+
+.color h3 {
+  color: unset;
+  margin-bottom: 0;
 }
