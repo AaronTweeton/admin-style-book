@@ -36,3 +36,7 @@
   color: unset;
   margin-bottom: 0;
 }
+
+.color dd {
+  margin-left: 0;
+}
