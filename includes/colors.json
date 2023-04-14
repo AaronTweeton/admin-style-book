@@ -1,0 +1,75 @@
+{
+	"palettes": [
+		{
+			"name": "Blues",
+			"swatches": [
+				{
+					"name": "WordPress Blue",
+					"color": "#0073AA"
+				},
+				{
+					"name": "Medium Blue",
+					"color": "#00A0D2"
+				}
+			]
+		},
+		{
+			"name": "Auxiliary Hues",
+			"swatches": [
+				{
+					"name": "Accent Red",
+					"color": "#DC3232"
+				},
+				{
+					"name": "Accent Orange",
+					"color": "#F56E28"
+				},
+				{
+					"name": "Accent Yellow",
+					"color": "#FFB900"
+				},
+				{
+					"name": "Accent Green",
+					"color": "#46B450"
+				},
+				{
+					"name": "Medium Blue",
+					"color": "#00A0D2"
+				},
+				{
+					"name": "Accent Purple",
+					"color": "#826EB4"
+				}
+			]
+		},
+		{
+			"name": "Grays",
+			"swatches": [
+				{
+					"name": "Ultra Dark Gray",
+					"color": "#191E23"
+				},
+				{
+					"name": "Dark Gray",
+					"color": "#23282D"
+				},
+				{
+					"name": "Base Gray",
+					"color": "#32373C"
+				},
+				{
+					"name": "Dark Silver Gray",
+					"color": "#82878C"
+				},
+				{
+					"name": "Silver Gray",
+					"color": "#A0A5AA"
+				},
+				{
+					"name": "Light Silver Gray",
+					"color": "#B4B9BE"
+				}
+			]
+		}
+	]
+}
