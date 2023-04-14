@@ -3,7 +3,7 @@ Contributors: aarontweeton
 Tags: admin, styles, ui, development
 Requires at least: 6.2
 Tested up to: 6.2
-Stable tag: 0.1
+Stable tag: 0.2.0
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -21,6 +21,9 @@ This plugin shows built-in WordPress admin styles to help WordPress developers c
 From your WordPress dashboard, go to Tools > Admin Style Book.
 
 == Changelog ==
+
+= 0.2.0 =
+* Added: Admin color swatches.
 
 = 0.1.0 =
 Pre-release
