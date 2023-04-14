@@ -35,7 +35,7 @@ if (!function_exists('is_current')) {
 ?>
 
 <div class="wrap">
-    <h1><?php _e('Admin Style Book', 'admin-style-book') ?></h1>
+    <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
     <ul class="subsubsub">
         <?php
         foreach ($routes as $route) {
